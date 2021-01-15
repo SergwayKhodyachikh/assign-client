@@ -1,12 +1,15 @@
-import React from 'react';
-import { Header } from './Landing/Header/Header';
-
+import { Landing } from 'Landing/Landing';
+import history from 'navigation/history';
+import React, { Fragment } from 'react';
+import { Router } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-    </div>
+    <Fragment>
+      <Router history={history}>
+        <Landing />
+      </Router>
+    </Fragment>
   );
 }
 

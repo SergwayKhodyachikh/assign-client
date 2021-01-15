@@ -8,8 +8,8 @@ export const theme = responsiveFontSizes(
       h4: {
         fontSize: '5rem',
         letterSpacing: '.1rem',
-        fontWeight: 500
-      }
-    }
+        fontWeight: 500,
+      },
+    },
   })
 );

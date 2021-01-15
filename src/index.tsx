@@ -2,13 +2,14 @@ import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {theme} from './styles/theme';
-import './styles/index.scss';
+import { theme } from './styles/theme';
 import { CssBaseline, ThemeProvider } from '@material-ui/core';
+import { GlobalStyle } from 'styles/GlobalStyle';
 
 ReactDOM.render(
   <StrictMode>
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <CssBaseline />
       <App />
     </ThemeProvider>
