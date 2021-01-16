@@ -1,4 +1,4 @@
-import { Landing } from 'Landing/Landing';
+import { Landing } from 'landing';
 import history from 'navigation/history';
 import React, { Fragment } from 'react';
 import { Router } from 'react-router-dom';

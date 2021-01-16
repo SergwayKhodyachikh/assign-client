@@ -3,16 +3,22 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { theme } from './styles/theme';
-import { CssBaseline, ThemeProvider } from '@material-ui/core';
+import { CssBaseline, StylesProvider, ThemeProvider as MuiThemeProvider } from '@material-ui/core';
 import { GlobalStyle } from 'styles/GlobalStyle';
+import { ThemeProvider } from 'styled-components';
 
 ReactDOM.render(
   <StrictMode>
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <CssBaseline />
-      <App />
-    </ThemeProvider>
+    <StylesProvider injectFirst>
+      <MuiThemeProvider theme={theme}>
+        <GlobalStyle />
+        <CssBaseline />
+        {/* Use also the ThemeProvider for Styled-Components so //you can access the theme in your own css */}
+        <ThemeProvider theme={theme}>
+          <App />
+        </ThemeProvider>
+      </MuiThemeProvider>
+    </StylesProvider>
   </StrictMode>,
   document.getElementById('root')
 );

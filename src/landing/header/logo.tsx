@@ -1,13 +1,12 @@
-import React from 'react';
+import React, { AnchorHTMLAttributes } from 'react';
 import { GoProject } from 'react-icons/go';
 import styled from 'styled-components';
 
-const StyledLogo = styled.a`
+const Wrapper = styled.a`
   display: inline-flex;
   align-items: center;
   font-size: 1.6rem;
   color: #fff;
-  padding: 0.1rem 0.2rem;
   transition: all 0.5s;
   &:hover {
     opacity: 0.8;
@@ -21,25 +20,23 @@ const StyledLogo = styled.a`
   }
 `;
 
-const LogoIcon = styled(GoProject)`
+const Icon = styled(GoProject)`
   margin-right: 0.3rem;
   font-size: 1.8em;
 `;
 
-const LogoText = styled.h1`
+const Text = styled.h1`
   font-family: 'Permanent Marker';
   user-select: none;
   letter-spacing: 0.3rem;
+  font-size: 4rem;
 `;
 
-
-
-export const Logo: React.FC = () => {
+export const Logo = (props: AnchorHTMLAttributes<HTMLAnchorElement>) => {
   return (
-    <StyledLogo href="/">
-      <LogoIcon />
-      <LogoText>Assign</LogoText>
-
-    </StyledLogo>
+    <Wrapper {...props} href="/">
+      <Icon />
+      <Text>Assign</Text>
+    </Wrapper>
   );
 };
