@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { About } from './about';
+import Features from './features';
 import { Header } from './header';
 
 export const Landing: React.FC = () => {
@@ -7,7 +8,7 @@ export const Landing: React.FC = () => {
     <Fragment>
       <Header />
       <About />
-      <div>features</div>
+      <Features />
       <div>scroll button</div>
     </Fragment>
   );
