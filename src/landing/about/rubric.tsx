@@ -34,6 +34,7 @@ const Image = styled.img.attrs({
     margin-bottom: 2rem;
     ${theme.breakpoints.down('sm')} {
       display: block;
+      max-width: 30rem;
     }
   `}
 `;
@@ -57,6 +58,9 @@ const Paragraph = styled.p`
     font-weight: 400;
     ${theme.breakpoints.down('md')} {
       font-size: 1.4rem;
+    }
+    ${theme.breakpoints.down('sm')} {
+      max-width: 40rem;
     }
   `}
 `;

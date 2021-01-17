@@ -33,6 +33,10 @@ html {
 
 body {
   box-sizing: border-box;
+  &::selection {
+    background-color: #fff;
+    color: #000;
+  }
   // font-family: 'Lato', sans-serif;
   // font-size: 1.4rem;
   // font-weight: 400;

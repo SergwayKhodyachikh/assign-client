@@ -50,11 +50,6 @@ const TitleWrapper = styled.h1`
     margin-right: -3rem;
     overflow: hidden;
 
-    &::selection {
-      background-color: #fff;
-      color: #000;
-    }
-
     .main {
       display: inline-block;
       animation: ${moveInLeftTitle} 1s ease-out;

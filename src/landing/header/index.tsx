@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css, keyframes } from 'styled-components';
 
 import { Wrapper } from './wrapper';
-import { Logo } from 'landing/header/logo';
+import { Logo } from 'landing/logo';
 import { Title } from './title';
 import { Actions } from './actions';
 import { ScrollDownButton } from './scroll-down-button';

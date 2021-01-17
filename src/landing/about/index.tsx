@@ -60,6 +60,7 @@ const Text = styled.div`
 const Image = styled.img.attrs({ alt: 'about-paragraph' })`
   ${({ theme }) => css`
     flex: 1;
+    max-width: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +72,7 @@ const Image = styled.img.attrs({ alt: 'about-paragraph' })`
 
 export const About = () => {
   return (
-    <Wrapper>
+    <Wrapper draggable={false}>
       <LargeContainer>
         <Image src={illustration} />
         <Text>{renderRubrics()}</Text>
