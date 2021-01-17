@@ -1,8 +1,8 @@
-import { Logo } from 'landing/logo';
+import { Logo } from 'common/logo';
 import React, { Fragment } from 'react';
 import styled, { css } from 'styled-components';
 import { CopyRight } from './copy-right';
-import { Menu } from './menu';
+import { Menu } from './footer-menu-list';
 
 const MenuWrapper = styled.footer`
   ${({ theme }) => css`
