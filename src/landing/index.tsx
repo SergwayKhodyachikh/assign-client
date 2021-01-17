@@ -3,6 +3,7 @@ import { About } from './about';
 import Features from './features';
 import { Footer } from './footer';
 import { Header } from './header';
+import ScrollUpButton from './scroll-up-button';
 
 export const Landing: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ export const Landing: React.FC = () => {
       <About />
       <Features />
       <Footer />
-      {/* <div>scroll button</div> */}
+      <ScrollUpButton />
     </Fragment>
   );
 };
