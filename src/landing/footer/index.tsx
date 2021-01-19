@@ -1,7 +1,7 @@
 import { Logo } from 'common/logo';
 import React, { Fragment } from 'react';
 import styled, { css } from 'styled-components';
-import { CopyRight } from './copy-right';
+import { FooterSignature } from './footer-signature';
 import { Menu } from './footer-menu-list';
 
 const MenuWrapper = styled.footer`
@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
         <Logo />
         <Menu />
       </MenuWrapper>
-      <CopyRight />
+      <FooterSignature />
     </Fragment>
   );
 };

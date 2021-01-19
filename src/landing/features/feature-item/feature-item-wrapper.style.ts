@@ -9,13 +9,6 @@ export const FeatureWrapper = styled.div`
     border-radius: 2rem;
     padding: 2rem 3.5rem 1rem;
 
-    .icon {
-      font-size: 4em;
-      display: block;
-      margin: 2rem auto;
-      color: ${theme.palette.primary.main};
-    }
-
     ${theme.breakpoints.down('md')} {
       max-width: 29rem;
     }

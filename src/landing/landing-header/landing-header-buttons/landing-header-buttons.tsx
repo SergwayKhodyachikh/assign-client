@@ -7,8 +7,8 @@ import { LandingHeaderButtonsWrapper } from './landing-header-buttons-wrapper';
 export const LandingHeaderButtons: React.FC = () => {
   return (
     <LandingHeaderButtonsWrapper>
-      <LandingHeaderButtonsPrimary to="/register">join now</LandingHeaderButtonsPrimary>
-      <LandingHeaderButtonsSecondary to="/login">sign in</LandingHeaderButtonsSecondary>
+      <LandingHeaderButtonsPrimary to="#">join now</LandingHeaderButtonsPrimary>
+      <LandingHeaderButtonsSecondary to="#">sign in</LandingHeaderButtonsSecondary>
     </LandingHeaderButtonsWrapper>
   );
 };

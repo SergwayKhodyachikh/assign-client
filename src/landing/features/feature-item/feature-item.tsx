@@ -3,6 +3,7 @@ import React from 'react';
 import { IconType } from 'react-icons/lib';
 import { FeatureWrapper } from './feature-item-wrapper.style';
 import { FeatureTitle } from './feature-item-title.style';
+import { FeatureIcon } from './feature-icon';
 
 interface Props {
   title: string;
@@ -10,10 +11,10 @@ interface Props {
   icon: IconType;
 }
 
-export const FeatureItem: React.FC<Props> = ({ icon: Icon, title, content }) => {
+export const FeatureItem: React.FC<Props> = ({ icon, title, content }) => {
   return (
     <FeatureWrapper>
-      <Icon className="icon" />
+      <FeatureIcon component={icon} />
       <FeatureTitle>{title}</FeatureTitle>
       <FeatureParagraph>{content}</FeatureParagraph>
     </FeatureWrapper>
